@@ -1,6 +1,6 @@
 const { post } = require("./utils");
 
-const API_URL = "https://nftp0.dingocoin.io";
+const { API_URL } = require("./config");
 
 const getCollection = (data) => {
     return post(`${API_URL}/collection/get`, {

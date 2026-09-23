@@ -1,8 +1,9 @@
-const META_BUCKET = "https://ewr1.vultrobjects.com/dingo-nftc-0-meta";
-const PREVIEW_BUCKET = "https://ewr1.vultrobjects.com/dingo-nftc-0-preview";
-const STATE_BUCKET = "https://ewr1.vultrobjects.com/dingo-nftc-0-state";
-const PROFILE_BUCKET = "https://ewr1.vultrobjects.com/dingo-nftc-0-profile";
-const COLLECTION_BUCKET = "https://ewr1.vultrobjects.com/dingo-nftc-0-collection";
+const { STORAGE_BASE } = require("./config");
+const META_BUCKET = `${STORAGE_BASE}/dingo-nftc-0-meta`;
+const PREVIEW_BUCKET = `${STORAGE_BASE}/dingo-nftc-0-preview`;
+const STATE_BUCKET = `${STORAGE_BASE}/dingo-nftc-0-state`;
+const PROFILE_BUCKET = `${STORAGE_BASE}/dingo-nftc-0-profile`;
+const COLLECTION_BUCKET = `${STORAGE_BASE}/dingo-nftc-0-collection`;
 
 const { get } = require("./utils");
 
